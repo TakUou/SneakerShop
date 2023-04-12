@@ -1,0 +1,22 @@
+﻿<Window x:Class="SneakerShop.Ceo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SneakerShop"
+        mc:Ignorable="d"
+        Title="Ceo" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="Buy" Content="Покупки" HorizontalAlignment="Center" VerticalAlignment="Top" Width="400" Height="65" Click="Buy_Click" />
+            <Button x:Name="Department" Content="Отделы" HorizontalAlignment="Center" VerticalAlignment="Top" Width="400" Height="65" Grid.Column="1" Click="Department_Click"  />
+            <Frame x:Name="Frame" Grid.ColumnSpan="3" Margin="0,65,0,0" NavigationUIVisibility="Hidden"/>
+        </Grid>
+        
+    </Grid>
+</Window>
